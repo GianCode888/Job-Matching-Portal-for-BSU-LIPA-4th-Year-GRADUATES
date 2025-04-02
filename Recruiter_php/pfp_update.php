@@ -47,18 +47,23 @@
 <body>
     <h1>Update your profile here!</h1>
     <form>
-        <Label for = company_name>Company Name:</Label>
-        <input type="text" name="company_name" placeholder="Your company name">
-        <Label for = recruiter_name>Recruiter Name:</Label>
-        <input type="text" name="recruiter_name" placeholder="Your name">
-        <Label for = username>Username:</Label>
-        <input type="text" name="username" placeholder="Your username">
-        <Label for = industry>Industry name:</Label>
-        <input type="text" name="industry" placeholder="Your indutry name">
-        <Label for = location>Location:</Label>
-        <input type="text" name="location" placeholder="Location">
+    <label for="company_name">Company Name:</label>
+    <input type="text" id="company_name" name="company_name" placeholder="Your company name">
 
+    <label for="recruiter_name">Recruiter Name:</label>
+    <input type="text" id="recruiter_name" name="recruiter_name" placeholder="Your name">
 
-    </form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Your username">
+
+    <label for="industry">Industry Name:</label>
+    <input type="text" id="industry" name="industry" placeholder="Your industry name">
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" placeholder="Location">
+
+    <button type="submit">Update</button>
+</form>
+
 </body>
 </html>

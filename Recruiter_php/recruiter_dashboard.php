@@ -32,6 +32,7 @@
 <ul class = dashboard_list>
 <li><a href="pfp_update.php">Update Profile</a></li>
 <li><a href="job_posting.php">Post a Job</a></li>
+<li><a href="posted_job.php">View Posted Job</a></li>
 <li><a href="applications.php">View Applications</a></li>
 <li><a href="logout.php">Logout</a></li>
 </ul>
