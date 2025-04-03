@@ -1,6 +1,6 @@
 <?php
 // session_start();
-// include('database_management.php');
+// require_once ('../database_management.php');
 
 // if (!isset($_SESSION['recruiter_id'])) {
 //     header('location: login.php');
@@ -29,9 +29,9 @@
 //     $stmt->bindParam(':recruiter_id', $recruiter_id, PDO::PARAM_INT);
 //     $stmt->execute();
 //     $posted_job = $stmt->fetch();
-// }
+//}
 ?>
-
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,15 +53,15 @@
             <th>Deadline</th>
         </tr>
         <tr>
-            <!-- <td><?php echo htmlspecialchars($posted_job['job_title']); ?></td>
+            <td><?php echo htmlspecialchars($posted_job['job_title']); ?></td>
             <td><?php echo htmlspecialchars($posted_job['company_name']); ?></td>
             <td><?php echo htmlspecialchars($posted_job['location']); ?></td>
             <td><?php echo htmlspecialchars($posted_job['job_type']); ?></td>
             <td><?php echo htmlspecialchars($posted_job['salary']); ?></td>
             <td><?php echo htmlspecialchars($posted_job['description']); ?></td>
             <td><?php echo htmlspecialchars($posted_job['requirements']); ?></td>
-            <td><?php echo htmlspecialchars($posted_job['deadline']); ?></td> -->
+            <td><?php echo htmlspecialchars($posted_job['deadline']); ?></td>
         </tr>
     </table>
 </body>
-</html>
+</html> -->

@@ -1,6 +1,6 @@
 <?php
-// session_start();
-// include('database_management.php');
+session_start();
+require_once ('../database_management.php');
 
 // if (!isset($_SESSION['recruiter_id'])) {
 //     header('location: login.php');
@@ -26,15 +26,15 @@
 <body>
     <h1>Post a Job Offer!</h1>
     
-    <form action="posted_job.php" method="POST">
+    <form action="post_process.php" method="POST">
         <label for="job_title">Job Title:</label>
         <input type="text" id="job_title" name="job_title" placeholder="Enter job title" required>
 
-        <label for="description">Job Description:</label>
-        <textarea id="description" name="description" placeholder="Enter job description" required></textarea>
+        <label for="job_description">Job Description:</label>
+        <textarea id="job_description" name="job_description" placeholder="Enter job description" required></textarea>
 
         <label for="company_name">Company Name:</label>
-        <input type="text" id="company_name" name="company_name" required>
+        <input type="text" id="company_name" name="company_name" placeholder="Enter company name" required>
 
         <label for="location">Location:</label>
         <input type="text" id="location" name="location" placeholder="Enter job location (City, Remote, Hybrid)" required>
@@ -53,11 +53,16 @@
         <label for="requirements">Requirements/Qualifications:</label>
         <textarea id="requirements" name="requirements" placeholder="List qualifications and requirements" required></textarea>
 
-        <label for="deadline">Application Deadline:</label>
-        <input type="date" id="deadline" name="deadline" required>
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+            <option value="Open">Open</option>
+            <option value="Closed">Closed</option>
+        </select>
+
+        <label for="posted_at">Date Posted:</label>
+        <input type="date" id="posted_at" name="posted_at" required>
 
         <button type="submit">Post Job</button>
     </form>
-
 </body>
 </html>
